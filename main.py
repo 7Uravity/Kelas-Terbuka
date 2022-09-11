@@ -133,6 +133,6 @@ try:
     TOKEN = os.environ.get("DISCORD_BOT_SECRET")
     client.run(TOKEN)
 except discord.errors.HTTPException:
-    print("\n\n\nBLOCKED BY RATE LIMITS\nRESTARTING NOW\n\n\n")
+    print("\n\n\nRATE LIMIT REACHED\nRESTARTING NOW\n\n\n")
     system("restarter.py")
     system('kill 1')
